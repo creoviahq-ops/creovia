@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0b0b0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.navbar {
+  width: 100%;
+  padding: 22px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #24242b;
+  background: #0b0b0f;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  color: #b8b8c2;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+.hero {
+  text-align: center;
+  padding: 110px 7% 90px;
+  background:
+    radial-gradient(circle at center, #24243b 0%, #0b0b0f 55%);
+}
+
+.eyebrow {
+  color: #9d9daa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(48px, 9vw, 92px);
+  line-height: 1;
+  letter-spacing: -4px;
+  margin-bottom: 25px;
+}
+
+.hero-text {
+  max-width: 650px;
+  margin: 0 auto 38px;
+  color: #b9b9c4;
+  font-size: 18px;
+}
+
+.search-box,
+.email-box {
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input,
+.email-box input {
+  flex: 1;
+  padding: 16px 18px;
+  border: 1px solid #34343d;
+  border-radius: 10px;
+  background: #15151b;
+  color: white;
+  outline: none;
+}
+
+.search-box button,
+.email-box button,
+.secondary-button {
+  padding: 16px 22px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0b0b0f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.categories,
+.section,
+.about,
+.newsletter {
+  padding: 80px 7%;
+}
+
+.categories h2,
+.section h2,
+.intelligence h2,
+.newsletter h2,
+.about h2 {
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.category-grid button {
+  padding: 20px;
+  border: 1px solid #292932;
+  border-radius: 12px;
+  background: #121218;
+  color: white;
+  cursor: pointer;
+}
+
+.category-grid button:hover {
+  border-color: #ffffff;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 35px;
+}
+
+.section-heading > a {
+  color: #aaaab5;
+  font-size: 14px;
+}
+
+.opportunity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.opportunity-card {
+  padding: 28px;
+  border: 1px solid #292932;
+  border-radius: 16px;
+  background: #111117;
+}
+
+.opportunity-card h3 {
+  font-size: 22px;
+  line-height: 1.25;
+  margin: 15px 0;
+}
+
+.opportunity-card p {
+  color: #a8a8b3;
+  font-size: 14px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  padding: 6px 9px;
+  border-radius: 5px;
+  background: #24242d;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 25px 0;
+  color: #c5c5ce;
+  font-size: 12px;
+}
+
+.learn-more {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.coming-soon {
+  border-style: dashed;
+}
+
+.intelligence {
+  background: #121218;
+  text-align: center;
+}
+
+.intelligence p {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  color: #aaaab5;
+}
+
+.secondary-button {
+  background: transparent;
+  color: white;
+  border: 1px solid #40404a;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.newsletter p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #aaaab5;
+}
+
+.about {
+  border-top: 1px solid #24242b;
+}
+
+.about p:last-child {
+  max-width: 650px;
+  color: #aaaab5;
+}
+
+footer {
+  padding: 50px 7%;
+  border-top: 1px solid #24242b;
+  color: #aaaab5;
+}
+
+footer .logo {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  margin-top: 25px;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  .category-grid,
+  .opportunity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding-top: 80px;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .search-box,
+  .email-box {
+    flex-direction: column;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-heading > a {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
